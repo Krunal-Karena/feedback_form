@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h1 id="title">Feedback Form</h1>
+      <p id="description">Please, let us know what do you think about our service</p>
+    </div>
+
+    <form id="survey-form" action="/" method="post">
+      <div class="row">
+        <label class="wide" id="name-label" for="name">Name:<span id="require">*</span></label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+
+      <div class="row">
+        <label class="wide" id="email-label" for="email">Email:<span id="require">*</span></label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </div>
+
+
+      <div class="row m-t-10">
+        <p class="label">Rate our product<span id="require">*</span></p>
+      </div>
+      <div class="small-row justify-sb">
+        <p>Not at all likely</p>
+        <p>Extremely likely</p>
+      </div>
+
+      <div class="small-row justify-sb">
+        <div class="radio-control">
+          <input type="radio" id="rating-1" name="rating" value=1>
+          <label for="rating-1">1</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="rating-2" name="rating" value=2>
+          <label for="rating-2">2</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="rating-3" name="rating" value=3>
+          <label for="rating-3">3</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="rating-4" name="rating" value=4>
+          <label for="rating-4">4</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="rating-5" name="rating" value=5>
+          <label for="rating-5">5</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="rating-6" name="rating" value=6>
+          <label for="rating-6">6</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="rating-7" name="rating" value=7>
+          <label for="rating-7">7</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="rating-8" name="rating" value=8>
+          <label for="rating-8">8</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="rating-9" name="rating" value=9>
+          <label for="rating-9">9</label>
+        </div>
+        <div class="radio-control">
+          <input type="radio" id="rating-10" name="rating" value=10>
+          <label for="rating-10">10</label>
+        </div>
+      </div>
+
+      <div class="row m-t-10">
+        <label for="comments">What do you like?</label>
+      </div>
+
+      <div class="row">
+        <textarea rows="6" id="comments" name="like" placeholder="Write your comments here..."></textarea>
+      </div>
+
+      <div class="row m-t-10">
+        <label for="comments">What needs to be improved?<span id="require">*</span></label>
+      </div>
+
+      <div class="row">
+        <textarea rows="6" id="comments" name="improve" placeholder="Write your comments here..." required></textarea>
+      </div>
+      <div class="row">
+        <button id="submit" type="submit">Submit</button>
+        <button id="reset" type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
